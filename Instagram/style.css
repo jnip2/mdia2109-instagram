@@ -1,0 +1,270 @@
+body, html, .main-content {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: #fafafa;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #385185;
+    font-weight: normal;
+}
+
+div.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    gap: 40px;
+}
+
+div.right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.right .top-box img.logo {
+    margin-top: 20px;
+}
+
+div.inputs form {
+    gap: 3px;
+}
+
+div.facebook, div.login, div.inputs, div.top-footer, div.get-app, div.bottom-box, div.top-box, div.top-box div.inputs form, div.bottom-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+div.facebook, div.bottom-box, div.bottom-footer, div.top-footer {
+    flex-direction: row;
+}
+
+div.bottom-box a {
+    font-weight: bold;
+    color: #4bb4f8;
+}
+
+div.bottom-box {
+    gap: 5px;
+}
+
+div.inputs {
+    gap: 8px;
+}
+
+div.login {
+    gap: 15px;
+}
+
+div.top-box {
+    gap: 15px;
+}
+
+div.facebook {
+    align-items: center;
+    gap: 5px;
+}
+
+div.top-box, div.bottom-box {
+    background-color: #ffffff;
+}
+
+div.bottom-box, div.top-box {
+    border: solid 1px lightgray;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.inputs form input {
+    background-color: #fafafa;
+    border: solid 0.5px lightgray;
+    width: 240px;
+    height: 30px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.login-button button, div.continue-facebook button {
+    background-color: #4bb4f8;
+    border: none;
+    color: white;
+    width: 250px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+div.continue-facebook button {
+    background-color: #0095f6;
+}
+
+div.forgot a {
+    font-size: 12px;
+}
+
+div.facebook img {
+    height: 15px;
+    width: 15px;
+}
+
+div.top-footer, div.get-app, div.bottom-box, div.top-box, div.top-box div.inputs form, div.bottom-footer {
+    justify-content: center;
+    align-items: center;
+}
+
+div.top-box, div.top-box div.inputs form, div.get-app {
+    flex-direction: column;
+}
+
+div.bottom-box p {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.top-footer {
+    gap: 20px;
+    width: 940px;
+    margin: auto;
+}
+
+div.mobile-language form select, footer, footer a, div.bottom-footer form select {
+    color: gray;
+    font-size: 11px;
+    border: none;
+    background-color: transparent;
+}
+
+div.mobile-language form select option, div.bottom-footer form select option {
+    background-color: white;
+    color: black;
+}
+
+div.app-img img.appstore {
+    display: none;
+    width: 136px;
+}
+
+div.app-img img {
+    height: 40px;
+    width: 134px;
+}
+
+div.app-img img.microsoft {
+    width: 110px;
+}
+
+div.meta, div.mobile-language, div.forgot-mobile, div.continue-facebook, div.mobile-or {
+    display: none;
+}
+
+div.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+@media screen and (max-width: 820px) {
+    div.left {
+        display: none;
+    }
+
+    div.app-img img {
+        display: none;
+    }
+
+    div.app-img img.appstore {
+        display: inline;
+    }
+
+    div.main-content {
+        height: 90%;
+    }
+
+    div.top-footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    body, html, .main-content {
+        background-color: #ffffff;
+    }
+
+    div.bottom-box, div.top-box {
+        border: none;
+        background-color: transparent;
+    }
+
+    div.main-content {
+        align-items: flex-start;
+        height: 80%;
+    }
+
+    div.right {
+        gap: 10px;
+    }
+
+    div.top-footer {
+        flex-wrap: wrap;
+        width: 400px;
+        gap: 10px 17px;
+    }
+
+    div.bottom-footer {
+        margin-top: 10px;
+    }
+    
+    div.login {
+        margin-top: 15px;
+    }
+
+    div.footer {
+        background-color: #fafafa;
+    }
+
+    div.mobile-language, div.forgot-mobile, div.continue-facebook, div.mobile-or {
+        display: inline;
+    }
+
+    div.forgot-mobile {
+        text-align: right;
+    }
+
+    div.forgot-mobile a {
+        color: #109bf6;
+    }
+
+    div.bottom-footer {
+        display: none;
+    }
+
+    div.or, div.facebook, div.forgot, div.get-app {
+        display: none;
+    }
+
+    div.continue-facebook button img {
+        height: 20px;
+        width: 20px;
+    }
+
+    div.continue-facebook button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    div.meta {
+        display: inline;
+        margin: auto;
+    }
+}
